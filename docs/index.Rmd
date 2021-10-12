@@ -1,0 +1,77 @@
+---
+title: "Midterm Instruction"
+subtitle: "FALL 2021 POLI316 Comparative Politics"
+author: "Sanghoon Park"
+date: "University of South Carolina"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["mystyle.css", "rutgers-fonts"]
+    self_contained: true
+    nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      in_header: "./libs/partials/header.html"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Midterm Instruction
+## Date: Oct. 12th 2021
+## Place: \#436 Close-Hipp
+.pull-left-wide[
+*Please check if you have .uscred[misprinted pages]*.
+
+Please write *.uscred[your name]* on each page.
+
+You have 75 minutes (4:25-5:40 pm).
+
+*.uscred[Read instructions carefully]*.
+
+]
+.pull-right-wide[
+.center.big[
+&#x1F446;&#x1F3FC;  
+See the timer to check your time!
+]
+]
+```{r, echo = F, warning=F}
+library(countdown)
+
+countdown(
+  minutes = 75, 
+  seconds = 0,
+  update_every = 1,
+  top = 0,
+  padding = "40px",
+  margin = "3%",
+  font_size = "5.5em",
+  # Fanfare when it's over
+  play_sound = FALSE,
+  # Set timer theme to match solarized colors
+  color_border              = "#cb4b16",
+  color_text                = "#cb4b16",
+  color_running_background  = "#2aa198",
+  color_running_text        = "#073642",
+  color_finished_background = "#d30102",
+  color_finished_text       = "#002b36"
+)
+```
+
+
+
+
+---
+
+```{r, echo = F, eval = F, message = F, warning=F, results='hide'}
+xaringanBuilder::build_pdf("POLI316-W1-1.html",
+                           complex_slides = TRUE, 
+                           partial_slides = TRUE)
+```
+
